@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <PackageId>Senkel.Serialization</PackageId>
+    <Authors>Leonhard Senkel</Authors>
+    <Company>Leonhard Senkel</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageDescription>A simple serialization framework which provides general interfaces, classes and exceptions for handling serialization and deserialization independent of their implementation.</PackageDescription>
+    <RepositoryUrl>https://github.com/Leknes/serialization-model/RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>

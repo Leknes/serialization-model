@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "P3amhWHh/dmN32IWKPd045Y1RcnfmlCCDKyU+6oawh9o72zpvJSvj5WU4vE7JJ5dOjx4HIU/hOyVKj7kVpTDLg==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\json-serializer\\json-serializer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leonhard\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Leonhard\\.nuget\\packages\\senkel.serialization\\3.1.0\\senkel.serialization.3.1.0.nupkg.sha512",
+    "C:\\Users\\Leonhard\\.nuget\\packages\\senkel.serialization.text\\1.4.2\\senkel.serialization.text.1.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

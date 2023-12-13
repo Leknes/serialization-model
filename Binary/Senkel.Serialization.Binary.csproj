@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <PackageId>Senkel.Serialization.Binary</PackageId>
+    <Authors>Leonhard Senkel</Authors>
+    <Company>Leonhard Senkel</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageDescription>A simple library wrapping the memory pack serializer into my serialization framework.</PackageDescription>
+    <RepositoryUrl>https://github.com/Leknes/serialization-model</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MemoryPack.Core" Version="1.10.0" />
+    <PackageReference Include="Senkel.Serialization" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
