@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senkel.Serialization.Text</name>
+    </assembly>
+    <members>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextDeserializer">
+            <summary>
+            Represents an asynchronous deserializer that is capable of deserializing text.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.IAsyncTextDeserializer.DeserializeAsync``1(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Deserializes the given text to an object of the specified type asynchronously.
+            </summary>
+            <typeparam name="T">The type of the object to deserialize.</typeparam>
+            <param name="text">The text containing the serialization data.</param>
+            <param name="cancellationToken">The cancellation token of the task.</param>
+            <returns>A task containing the deserialized object.</returns>
+        </member>
+        <member name="M:Senkel.Serialization.Text.IAsyncTextDeserializer.DeserializeAsync(System.String,System.Type,System.Threading.CancellationToken)">
+            <summary>
+            Deserializes the given text to an object of the specified type asynchronously.
+            </summary>
+            <param name="type">The type of the object to deserialize.</param>
+            <param name="text">The text containing the serialization data.</param>
+            <param name="cancellationToken">The cancellation token of the task.</param>
+            <returns>A task containing the deserialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextPopulater">
+            <summary>
+            Represents an object that is capable of populating objects asynchronously by reading from a text.
+            </summary> 
+        </member>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextSerializer">
+            <summary>
+            Represents an asynchronous serializer capable of serializing to text.
+            </summary>
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextDeserializer">
+            <summary>
+            Represents a deserializer that is capable of deserializing text.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.ITextDeserializer.Deserialize``1(System.String)">
+            <summary>
+            Deserializes the given text to an object of the specified type.
+            </summary>
+            <typeparam name="T">The type of the object to deserialize.</typeparam>
+            <param name="text">The text containing the serialization data.</param>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="M:Senkel.Serialization.Text.ITextDeserializer.Deserialize(System.String,System.Type)">
+            <summary>
+            Deserializes the given text to an object of the specified type.
+            </summary>
+            <param name="type">The type of the object to deserialize.</param>
+            <param name="text">The text containing the serialization data.</param>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextPopulater">
+            <summary>
+            Represents an object that is capable of populating objects by reading from a text.
+            </summary> 
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextSerializer">
+            <summary>
+            Represents a serializer capable of serializing to text.
+            </summary>
+        </member>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextDeserializer`1">
+            <summary>
+            Represents an asynchronous deserializer that is capable of deserializing text to the specified type.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.IAsyncTextDeserializer`1.DeserializeAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Deserializes the given text to an object of the specified type asynchronously.
+            </summary> 
+            <param name="text">The text containing the serialization data.</param> 
+            <param name="cancellationToken">The cancellation token of the task.</param>
+            <returns>A task containing the deserialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.AsyncTextDeserializer`1">
+            <summary>
+            Represents a deserializer class that can be used to treat a non-generic <see cref="T:Senkel.Serialization.Text.IAsyncTextDeserializer"/> like the <see cref="T:Senkel.Serialization.Text.IAsyncTextDeserializer`1"/> interface.
+            </summary>
+            <typeparam name="T">The type that can be serialized.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.Text.AsyncTextDeserializer`1.#ctor(Senkel.Serialization.Text.IAsyncTextDeserializer)">
+            <summary>
+            Creates a new instance of the <see cref="T:Senkel.Serialization.Text.AsyncTextDeserializer`1"/> that wraps around the given <see cref="T:Senkel.Serialization.Text.IAsyncTextDeserializer"/> interface.
+            </summary>
+            <param name="deserializer">The non-generic serializer that this class is based on.</param>
+        </member>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextPopulater`1">
+            <summary>
+            Represents an object that is capable of populating objects of a specified type asynchronously by reading from a text.
+            </summary>
+            <typeparam name="T">The type of objects that can be populating.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.Text.IAsyncTextPopulater`1.Populate(System.String,`0)">
+            <summary>
+            Populates the given target asynchronously by reading from the specified text.
+            </summary>
+            <param name="text">The text to read from.</param>
+            <param name="target">The target to populate.</param>
+        </member>
+        <member name="T:Senkel.Serialization.Text.IAsyncTextSerializer`1">
+            <summary>
+            Represents an asynchronous serializer capable of serializing to a text.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.IAsyncTextSerializer`1.SerializeAsync(`0,System.Threading.CancellationToken)">
+            <summary>
+            Serializes the given object to a text containing the serialized data.
+            </summary>
+            <param name="value">The object to serialize.</param>
+            <param name="cancellationToken">The cancellation token of the task.</param>
+            <returns>A task containing the text of the serialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.DeserializationGenericExtensions">
+            <summary>
+            Contains various extensions for representing non-generic serializers as a generic counterpart.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.DeserializationGenericExtensions.As``1(Senkel.Serialization.Text.ITextDeserializer)">
+            <summary>
+            Represents the non-generic <see cref="T:Senkel.Serialization.Text.ITextDeserializer"/> as their generic counterpart using the specified type.
+            </summary>
+            <typeparam name="T">The type of the deserializer to represent.</typeparam>
+            <param name="deserializer">The deserializer that the <see cref="T:Senkel.Serialization.Text.ITextDeserializer`1"/> is based on.</param>
+            <returns>The generic deserializer representation.</returns>
+        </member>
+        <member name="M:Senkel.Serialization.Text.DeserializationGenericExtensions.As``1(Senkel.Serialization.Text.IAsyncTextDeserializer)">
+            <summary>
+            Represents the non-generic <see cref="T:Senkel.Serialization.Text.IAsyncTextDeserializer"/> as their generic counterpart using the specified type.
+            </summary>
+            <typeparam name="T">The type of the deserializer to represent.</typeparam>
+            <param name="deserializer">The deserializer that the <see cref="T:Senkel.Serialization.Text.IAsyncTextDeserializer`1"/> is based on.</param>
+            <returns>The generic deserializer representation.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextDeserializer`1">
+            <summary>
+            Represents a deserializer that is capable of deserializing text to the specified type.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.ITextDeserializer`1.Deserialize(System.String)">
+            <summary>
+            Deserializes the given text to an object of the specified type.
+            </summary> 
+            <param name="text">The text containing the serialization data.</param>  
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.Text.TextDeserializer`1">
+            <summary>
+            Represents a deserializer class that can be used to treat a non-generic <see cref="T:Senkel.Serialization.Text.ITextDeserializer"/> like the <see cref="T:Senkel.Serialization.Text.ITextDeserializer`1"/> interface.
+            </summary>
+            <typeparam name="T">The type that can be serialized.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.Text.TextDeserializer`1.#ctor(Senkel.Serialization.Text.ITextDeserializer)">
+            <summary>
+            Creates a new instance of the <see cref="T:Senkel.Serialization.Text.TextDeserializer`1"/> that wraps around the given <see cref="T:Senkel.Serialization.Text.ITextDeserializer"/> interface.
+            </summary>
+            <param name="deserializer">The non-generic serializer that this class is based on.</param>
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextPopulater`1">
+            <summary>
+            Represents an object that is capable of populating objects of a specified type by reading from a text.
+            </summary>
+            <typeparam name="T">The type of objects that can be populating.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.Text.ITextPopulater`1.Populate(System.String,`0)">
+            <summary>
+            Populates the given target by reading from the specified text.
+            </summary>
+            <param name="text">The text to read from.</param>
+            <param name="target">The target to populate.</param>
+        </member>
+        <member name="T:Senkel.Serialization.Text.ITextSerializer`1">
+            <summary>
+            Represents a serializer capable of serializing to a text.
+            </summary>
+        </member>
+        <member name="M:Senkel.Serialization.Text.ITextSerializer`1.Serialize(`0)">
+            <summary>
+            Serializes the given object to a text containing the serialized data.
+            </summary>
+            <param name="value">The object to serialize.</param> 
+            <returns>The text of the serialized object.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Binary", "Binary\Senkel.Serialization.Binary.csproj", "{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization", "Core\Senkel.Serialization.csproj", "{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Json", "Json\Senkel.Serialization.Json.csproj", "{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Text", "Text\Senkel.Serialization.Text.csproj", "{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5717E90-DDA8-42D8-981F-2AA1F216C719}
+	EndGlobalSection
+EndGlobal

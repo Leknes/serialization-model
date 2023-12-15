@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y1ua4rwsFFA0E4YGYHG2lhg9GJOHGO1DAGywkLKhle3Ua6jgiAe9WH8+EAMgOOIgkjt1wJKz2EH+qdSut5d49Q==",
+  "dgSpecHash": "Bpm+TJvZMuAxhnROKRqQ2Rf4qc1ipRoxwtdeht6TaMggQUqP1ZoijVcbxQaZGJ+IGVcl9FCzKtkWElR7Pc9NTQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\serialization-framework\\serialization-framework.csproj",
+  "projectFilePath": "D:\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

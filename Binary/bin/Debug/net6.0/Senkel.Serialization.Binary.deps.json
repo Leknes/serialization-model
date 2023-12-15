@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Senkel.Serialization.Binary/1.0.0": {
+        "dependencies": {
+          "MemoryPack.Core": "1.10.0",
+          "Senkel.Serialization": "1.0.0"
+        },
+        "runtime": {
+          "Senkel.Serialization.Binary.dll": {}
+        }
+      },
+      "MemoryPack.Core/1.10.0": {
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MemoryPack.Core.dll": {
+            "assemblyVersion": "1.10.0.0",
+            "fileVersion": "1.10.0.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "Senkel.Serialization/1.0.0": {
+        "runtime": {
+          "Senkel.Serialization.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Senkel.Serialization.Binary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MemoryPack.Core/1.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MxQ7jag9AOXyAbq7DGvaJBANINLxnkzibOMuwdYAjQDaeIWamIi8Z/QmkOJGBUPGANjIxv2J07rMsFFnHJW/iQ==",
+      "path": "memorypack.core/1.10.0",
+      "hashPath": "memorypack.core.1.10.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
+      "path": "system.collections.immutable/6.0.0",
+      "hashPath": "system.collections.immutable.6.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "Senkel.Serialization/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

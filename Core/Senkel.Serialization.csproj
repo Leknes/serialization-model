@@ -10,7 +10,7 @@
     <Company>Leonhard Senkel</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageDescription>A simple serialization framework which provides general interfaces, classes and exceptions for handling serialization and deserialization independent of their implementation.</PackageDescription>
-    <RepositoryUrl>https://github.com/Leknes/serialization-model/RepositoryUrl>
+    <RepositoryUrl>https://github.com/Leknes/serialization-model</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 

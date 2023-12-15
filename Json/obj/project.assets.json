@@ -15,22 +15,24 @@
           }
         }
       },
-      "Senkel.Serialization/3.1.0": {
-        "type": "package",
+      "Senkel.Serialization/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "lib/net6.0/serialization-framework.dll": {}
+          "bin/placeholder/Senkel.Serialization.dll": {}
         },
         "runtime": {
-          "lib/net6.0/serialization-framework.dll": {}
+          "bin/placeholder/Senkel.Serialization.dll": {}
         }
       },
-      "Senkel.Serialization.Text/1.4.2": {
-        "type": "package",
+      "Senkel.Serialization.Text/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "lib/net6.0/serialization-text-framework.dll": {}
+          "bin/placeholder/Senkel.Serialization.Text.dll": {}
         },
         "runtime": {
-          "lib/net6.0/serialization-text-framework.dll": {}
+          "bin/placeholder/Senkel.Serialization.Text.dll": {}
         }
       }
     }
@@ -66,34 +68,22 @@
         "packageIcon.png"
       ]
     },
-    "Senkel.Serialization/3.1.0": {
-      "sha512": "P6NWZyFNskqBg6OFuByrCg5GpV9rd8T0as3Q7JhlasRABj03xmwTT6mGbcVcYuXJ3anwvemOP0tLtmiOZVYVHg==",
-      "type": "package",
-      "path": "senkel.serialization/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net6.0/serialization-framework.dll",
-        "senkel.serialization.3.1.0.nupkg.sha512",
-        "senkel.serialization.nuspec"
-      ]
+    "Senkel.Serialization/1.0.0": {
+      "type": "project",
+      "path": "../Core/Senkel.Serialization.csproj",
+      "msbuildProject": "../Core/Senkel.Serialization.csproj"
     },
-    "Senkel.Serialization.Text/1.4.2": {
-      "sha512": "UWdmhVvWu2ufxunDu21PHaUkWNehiGcqgjabb/im1NGvM0BBYFeSxxaXLxdR5TfwolbXrjq7wC41o0W9amClYA==",
-      "type": "package",
-      "path": "senkel.serialization.text/1.4.2",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net6.0/serialization-text-framework.dll",
-        "senkel.serialization.text.1.4.2.nupkg.sha512",
-        "senkel.serialization.text.nuspec"
-      ]
+    "Senkel.Serialization.Text/1.0.0": {
+      "type": "project",
+      "path": "../Text/Senkel.Serialization.Text.csproj",
+      "msbuildProject": "../Text/Senkel.Serialization.Text.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Newtonsoft.Json >= 13.0.3",
-      "Senkel.Serialization >= 3.1.0",
-      "Senkel.Serialization.Text >= 1.4.2"
+      "Senkel.Serialization >= 1.0.0",
+      "Senkel.Serialization.Text >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -103,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\json-serializer\\json-serializer.csproj",
+      "projectUniqueName": "D:\\GitHub\\Senkel\\Serialization\\Json\\Senkel.Serialization.Json.csproj",
       "projectName": "Senkel.Serialization.Json",
-      "projectPath": "D:\\GitHub\\json-serializer\\json-serializer.csproj",
+      "projectPath": "D:\\GitHub\\Senkel\\Serialization\\Json\\Senkel.Serialization.Json.csproj",
       "packagesPath": "C:\\Users\\Leonhard\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\json-serializer\\obj\\",
+      "outputPath": "D:\\GitHub\\Senkel\\Serialization\\Json\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -128,7 +118,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.csproj": {
+              "projectPath": "D:\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.csproj"
+            },
+            "D:\\GitHub\\Senkel\\Serialization\\Text\\Senkel.Serialization.Text.csproj": {
+              "projectPath": "D:\\GitHub\\Senkel\\Serialization\\Text\\Senkel.Serialization.Text.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -144,14 +141,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
-          },
-          "Senkel.Serialization": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          },
-          "Senkel.Serialization.Text": {
-            "target": "Package",
-            "version": "[1.4.2, )"
           }
         },
         "imports": [

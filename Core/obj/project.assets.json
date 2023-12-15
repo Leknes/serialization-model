@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\serialization-framework\\serialization-framework.csproj",
-      "projectName": "Senkel.Serialization.Framework",
-      "projectPath": "D:\\GitHub\\serialization-framework\\serialization-framework.csproj",
+      "projectUniqueName": "D:\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.csproj",
+      "projectName": "Senkel.Serialization",
+      "projectPath": "D:\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.csproj",
       "packagesPath": "C:\\Users\\Leonhard\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\serialization-framework\\obj\\",
+      "outputPath": "D:\\GitHub\\Senkel\\Serialization\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

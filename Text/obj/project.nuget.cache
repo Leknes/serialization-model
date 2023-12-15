@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IRDzf2HyX52mxYOqJ01x84aEJGUn5j+Kii0ylW8ocjN+z6h+x+vSlRzB1RdgQWKZDZrsH06/P21Hzq/6kKTSEA==",
+  "dgSpecHash": "amfuN8/tk5Y+A6quLvmpXI7HKenabYFI/nB20FXImpMgWDnMZQ+VUgZk90IpHgxvPurWpgJYvj82aX6PfC+1sw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\serialization-text-framework\\serialization-text-framework.csproj",
+  "projectFilePath": "D:\\GitHub\\Senkel\\Serialization\\Text\\Senkel.Serialization.Text.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

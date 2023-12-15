@@ -49,10 +49,11 @@ public sealed class BufferDeserializer<T> : IBufferDeserializer<T>
     /// </summary>
     /// <param name="deserializer">The non-generic serializer that this class is based on.</param>
     public BufferDeserializer(IBufferDeserializer deserializer)
-    {
+    { 
         _deserializer = deserializer;
     }
 
+    /// <inheritdoc/>
     public T? Deserialize(ReadOnlySpan<byte> buffer)
     {
         return _deserializer.Deserialize<T>(buffer);
@@ -64,6 +65,7 @@ public sealed class BufferDeserializer<T> : IBufferDeserializer<T>
 /// </summary> 
 public abstract class Deserializer : StreamDeserializer, IBufferDeserializer
 {
+    /// <inheritdoc/>
     public virtual T? Deserialize<T>(ReadOnlySpan<byte> buffer)
     {
         return (T?)Deserialize(buffer, typeof(T));

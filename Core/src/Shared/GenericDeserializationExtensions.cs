@@ -5,7 +5,7 @@ namespace Senkel.Serialization;
 /// <summary>
 /// Contains various extensions for representing non-generic serializers as a generic counterpart.
 /// </summary>
-public static class DeserializationGenericExtensions
+public static class GenericDeserializationExtensions
 {
     /// <summary>
     /// Represents the non-generic <see cref="IStreamDeserializer"/> as their generic counterpart using the specified type.

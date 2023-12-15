@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\serialization-text-framework\\serialization-text-framework.csproj",
+      "projectUniqueName": "D:\\GitHub\\Senkel\\Serialization\\Text\\Senkel.Serialization.Text.csproj",
       "projectName": "Senkel.Serialization.Text",
-      "projectPath": "D:\\GitHub\\serialization-text-framework\\serialization-text-framework.csproj",
+      "projectPath": "D:\\GitHub\\Senkel\\Serialization\\Text\\Senkel.Serialization.Text.csproj",
       "packagesPath": "C:\\Users\\Leonhard\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\serialization-text-framework\\obj\\",
+      "outputPath": "D:\\GitHub\\Senkel\\Serialization\\Text\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
