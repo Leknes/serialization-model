@@ -1,0 +1,14 @@
+D:\GitHub\Senkel\Serialization\Text\bin\Debug\net8.0\Senkel.Serialization.Text.deps.json
+D:\GitHub\Senkel\Serialization\Text\bin\Debug\net8.0\Senkel.Serialization.Text.dll
+D:\GitHub\Senkel\Serialization\Text\bin\Debug\net8.0\Senkel.Serialization.Text.pdb
+D:\GitHub\Senkel\Serialization\Text\bin\Debug\net8.0\Senkel.Serialization.Text.xml
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.AssemblyInfoInputs.cache
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.AssemblyInfo.cs
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.csproj.CoreCompileInputs.cache
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.sourcelink.json
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.dll
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\refint\Senkel.Serialization.Text.dll
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.xml
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\Senkel.Serialization.Text.pdb
+D:\GitHub\Senkel\Serialization\Text\obj\Debug\net8.0\ref\Senkel.Serialization.Text.dll

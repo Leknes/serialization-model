@@ -1,0 +1,17 @@
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.Binary.deps.json
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.Binary.dll
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.Binary.pdb
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.Binary.xml
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.dll
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.pdb
+D:\GitHub\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Serialization.xml
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.csproj.AssemblyReference.cache
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.AssemblyInfoInputs.cache
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.AssemblyInfo.cs
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.csproj.CoreCompileInputs.cache
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.sourcelink.json
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.csproj.CopyComplete
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.dll
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.xml
+D:\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.pdb
