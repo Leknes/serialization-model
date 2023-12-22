@@ -9,7 +9,8 @@
       "Senkel.Serialization.Binary/1.0.0": {
         "dependencies": {
           "MemoryPack.Core": "1.10.0",
-          "Senkel.Serialization": "1.0.0"
+          "Senkel.Serialization": "1.0.0",
+          "Senkel.Serialization.Core": "1.0.0.0"
         },
         "runtime": {
           "Senkel.Serialization.Binary.dll": {}
@@ -25,7 +26,15 @@
       },
       "Senkel.Serialization/1.0.0": {
         "runtime": {
-          "Senkel.Serialization.dll": {}
+          "Senkel.Serialization.Core.dll": {}
+        }
+      },
+      "Senkel.Serialization.Core/1.0.0.0": {
+        "runtime": {
+          "Senkel.Serialization.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -45,6 +54,11 @@
     },
     "Senkel.Serialization/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Senkel.Serialization.Core/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

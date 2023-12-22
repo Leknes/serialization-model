@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FkV34aB4q728e7yxly4jqfYggex36OLlxT6CrathtLOlDFc9RRPOqq1JuUKk0YGsEpA2tfx4YxK3jTOnD+e1LQ==",
+  "dgSpecHash": "yFZKETES5wq27cx7oiqh+DKg0fFvzXarS9V7rJYxbzCEnD1gQajvACF78UR0xaiXhA6QY3us5cpghLqraBNuwg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Senkel\\Serialization\\Binary\\Senkel.Serialization.Binary.csproj",
+  "projectFilePath": "D:\\Programming\\C#\\Senkel\\Serialization\\Binary\\Senkel.Serialization.Binary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonhard\\.nuget\\packages\\memorypack.core\\1.10.0\\memorypack.core.1.10.0.nupkg.sha512",
     "C:\\Users\\Leonhard\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

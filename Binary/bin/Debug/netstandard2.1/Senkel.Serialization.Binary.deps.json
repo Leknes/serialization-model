@@ -10,7 +10,11 @@
       "Senkel.Serialization.Binary/1.0.0": {
         "dependencies": {
           "MemoryPack.Core": "1.10.0",
-          "Senkel.Serialization": "1.0.0"
+          "Senkel.Compatibility.NullableAttribute": "1.0.0",
+          "Senkel.Compatibility.RequiredModifier": "1.0.0",
+          "Senkel.Serialization": "1.0.0",
+          "Senkel.Compatibility.NullableAttributes": "1.0.0.0",
+          "Senkel.Serialization.Core": "1.0.0.0"
         },
         "runtime": {
           "Senkel.Serialization.Binary.dll": {}
@@ -77,9 +81,35 @@
           }
         }
       },
+      "Senkel.Compatibility.NullableAttribute/1.0.0": {
+        "runtime": {
+          "Senkel.Compatibility.NullableAttributes.dll": {}
+        }
+      },
+      "Senkel.Compatibility.RequiredModifier/1.0.0": {
+        "runtime": {
+          "Senkel.Compatibility.RequiredModifier.dll": {}
+        }
+      },
       "Senkel.Serialization/1.0.0": {
         "runtime": {
-          "Senkel.Serialization.dll": {}
+          "Senkel.Serialization.Core.dll": {}
+        }
+      },
+      "Senkel.Compatibility.NullableAttributes/1.0.0.0": {
+        "runtime": {
+          "Senkel.Compatibility.NullableAttributes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Senkel.Serialization.Core/1.0.0.0": {
+        "runtime": {
+          "Senkel.Serialization.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -132,8 +162,28 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
+    "Senkel.Compatibility.NullableAttribute/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Senkel.Compatibility.RequiredModifier/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Senkel.Serialization/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Senkel.Compatibility.NullableAttributes/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Senkel.Serialization.Core/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

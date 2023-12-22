@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Senkel.Serialization</PackageId>
+    <PackageDescription>A simple serialization framework which provides general interfaces, classes and exceptions for handling serialization and deserialization independent of their implementation.</PackageDescription>
+  </PropertyGroup>
+
+</Project>

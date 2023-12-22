@@ -4,7 +4,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Binary", "Binary\Senkel.Serialization.Binary.csproj", "{BC76256C-C6C4-4375-81BE-CDDCEC9744A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization", "Core\Senkel.Serialization.csproj", "{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Core", "Core\Senkel.Serialization.Core.csproj", "{9A7A69D1-F0E2-4DFD-96A2-FFE1FD0EFBB6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Json", "Json\Senkel.Serialization.Json.csproj", "{B5E11E11-CBDD-4218-AD0D-BEBE460EA243}"
 EndProject

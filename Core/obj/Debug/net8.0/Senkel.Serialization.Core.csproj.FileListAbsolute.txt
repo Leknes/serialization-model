@@ -1,0 +1,14 @@
+D:\Programming\C#\Senkel\Serialization\Core\bin\Debug\net8.0\Senkel.Serialization.Core.deps.json
+D:\Programming\C#\Senkel\Serialization\Core\bin\Debug\net8.0\Senkel.Serialization.Core.dll
+D:\Programming\C#\Senkel\Serialization\Core\bin\Debug\net8.0\Senkel.Serialization.Core.pdb
+D:\Programming\C#\Senkel\Serialization\Core\bin\Debug\net8.0\Senkel.Serialization.Core.xml
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.AssemblyInfoInputs.cache
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.AssemblyInfo.cs
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.csproj.CoreCompileInputs.cache
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.sourcelink.json
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.dll
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\refint\Senkel.Serialization.Core.dll
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.xml
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\Senkel.Serialization.Core.pdb
+D:\Programming\C#\Senkel\Serialization\Core\obj\Debug\net8.0\ref\Senkel.Serialization.Core.dll

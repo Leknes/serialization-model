@@ -7,7 +7,7 @@ namespace Senkel.Serialization.Json;
 /// <summary>
 /// Represents a json serializer class that is capable of serializing objects to text or to streams.
 /// </summary> 
-public class JsonSerializer : ITextSerializer,  IStreamSerializer
+public class JsonSerializer : ITextSerializer, IStreamSerializer
 {
     private readonly JsonSerializerSettings? _settings;
 
