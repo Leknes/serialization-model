@@ -25,6 +25,12 @@
             Creates a new instance of the <see cref="T:Senkel.Serialization.Json.JsonDeserializer"/> class with a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializerSettings"/> class.
             </summary> 
         </member>
+        <member name="M:Senkel.Serialization.Json.JsonDeserializer.#ctor(Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Creates a new instance of the <see cref="T:Senkel.Serialization.Json.JsonDeserializer"/> class that wraps around the specified <see cref="T:Newtonsoft.Json.JsonSerializer"/> instance.
+            </summary>
+            <param name="serializer">The serializer that this instance will be based on.</param>
+        </member>
         <member name="M:Senkel.Serialization.Json.JsonDeserializer.CreateDefault">
             <summary>
             Creates a new instance of the <see cref="T:Senkel.Serialization.Json.JsonDeserializer"/> class using the default settings from <see cref="P:Newtonsoft.Json.JsonConvert.DefaultSettings"/>.
@@ -46,6 +52,12 @@
             Creates a new instance of the <see cref="T:Senkel.Serialization.Json.JsonSerializer"/> class with the specified serializer settings.
             </summary>
             <param name="settings">The serializer settings that the serializer will use.</param>
+        </member>
+        <member name="M:Senkel.Serialization.Json.JsonSerializer.#ctor(Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Creates a new instance of the <see cref="T:Senkel.Serialization.Json.JsonSerializer"/> class that wraps around the specified <see cref="T:Newtonsoft.Json.JsonSerializer"/> instance.
+            </summary>
+            <param name="serializer">The serializer that this instance will be based on.</param>
         </member>
         <member name="M:Senkel.Serialization.Json.JsonSerializer.#ctor">
             <summary>

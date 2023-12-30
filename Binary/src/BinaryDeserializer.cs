@@ -53,12 +53,12 @@ public sealed class BinaryDeserializer : IDeserializer<Stream>, IDeserializer<Re
 
     
 
-    public override object? Deserialize(Stream stream, Type type)
+    public object? Deserialize(Stream stream, Type type)
     {
         return Deserialize(GetBuffer(stream), type);
     }
 
-    public override T? Deserialize<T>(Stream stream) where T : default
+    public T? Deserialize<T>(Stream stream)
     { 
         return Deserialize<T>(GetBuffer(stream));
     }

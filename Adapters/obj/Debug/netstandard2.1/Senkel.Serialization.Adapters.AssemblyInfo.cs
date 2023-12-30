@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Leonhard Senkel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cc1bd8123ad2c612174fd7c71ba5aa1f99c6dc6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fca154b8a42d4a266af25c3baeedcf0809a2650e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Senkel.Serialization.Adapters")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Senkel.Serialization.Adapters")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

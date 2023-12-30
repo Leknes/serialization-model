@@ -4,166 +4,73 @@
         <name>Senkel.Serialization.Core</name>
     </assembly>
     <members>
-        <member name="T:Senkel.Serialization.IAsyncBufferDeserializer">
+        <member name="T:Senkel.Serialization.IAsyncDeserializer`1">
             <summary>
-            Represents an asynchronous deserializer capable of deserializing buffers.
+            Represents an asynchronous deserializer that is capable of deserializing objects from a source of the type <typeparamref name="T"/>.
             </summary>
+            <typeparam name="T">The type of the objects that can be deserialized.</typeparam>
         </member>
-        <member name="M:Senkel.Serialization.IAsyncBufferDeserializer.DeserializeAsync``1(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">
+        <member name="M:Senkel.Serialization.IAsyncDeserializer`1.DeserializeAsync(`0,System.Type,System.Threading.CancellationToken)">
             <summary>
-            Deserializes an object asynchronously based on the specified buffer.
+            Deserializes an object of the specified type from the given source asynchronously.
             </summary>
-            <typeparam name="T">The type to deserialize.</typeparam>
-            <param name="buffer">The buffer to use for deserialization.</param>
+            <param name="source">The source to deserialize from.</param>
+            <param name="type">The type of the object to deserialize.</param>
             <param name="cancellationToken">The cancellation token of the task.</param>
             <returns>A task containing the deserialized object.</returns>
         </member>
-        <member name="M:Senkel.Serialization.IAsyncBufferDeserializer.DeserializeAsync(System.ReadOnlyMemory{System.Byte},System.Type,System.Threading.CancellationToken)">
+        <member name="M:Senkel.Serialization.IAsyncDeserializer`1.DeserializeAsync``1(`0,System.Threading.CancellationToken)">
             <summary>
-            Deserializes an object asynchronously based on the specified buffer.
+            Deserializes an object of the specified type from the given source asynchronously.
             </summary>
-            <param name="buffer">The buffer to use for deserialization.</param>
-            <param name="type">The type to deserialize.</param>
+            <param name="source">The source to deserialize from.</param>
             <param name="cancellationToken">The cancellation token of the task.</param>
+            <typeparam name="U">The type of the object to deserialize.</typeparam>
             <returns>A task containing the deserialized object.</returns>
         </member>
-        <member name="T:Senkel.Serialization.AsyncDeserializer">
+        <member name="T:Senkel.Serialization.IAsyncMarshal`1">
             <summary>
-            Represents an asynchronous deserializer class capable of deserializing streams and buffers.
-            </summary> 
-        </member>
-        <member name="T:Senkel.Serialization.IBufferDeserializer">
-            <summary>
-            Represents a deserializer capable of deserializing buffers.
+            Represents an asynchronous serializer that is capable of serializing an object and marshalling the serialized data to a destination of the type <typeparamref name="T"/>.
             </summary>
+            <typeparam name="T">The type of destination that serialized data can be marshalled to.</typeparam>
         </member>
-        <member name="M:Senkel.Serialization.IBufferDeserializer.Deserialize``1(System.ReadOnlySpan{System.Byte})">
+        <member name="M:Senkel.Serialization.IAsyncMarshal`1.MarshalAsync(`0,System.Object,System.Threading.CancellationToken)">
             <summary>
-            Deserializes an object based on the specified buffer.
+            Serializes the specified object and marshals the serialized data to the given destination asynchronously.
             </summary>
-            <typeparam name="T">The type to deserialize.</typeparam>
-            <param name="buffer">The buffer to use for deserialization.</param> 
-            <returns>The deserialized object.</returns>
-        </member>
-        <member name="M:Senkel.Serialization.IBufferDeserializer.Deserialize(System.ReadOnlySpan{System.Byte},System.Type)">
-            <summary>
-            Deserializes an object based on the specified buffer.
-            </summary>
-            <param name="buffer">The buffer to use for deserialization.</param>
-            <param name="type">The type to deserialize.</param> 
-            <returns>The deserialized object.</returns>
-        </member>
-        <member name="T:Senkel.Serialization.Deserializer">
-            <summary>
-            Represents a deserializer class capable of deserializing streams and buffers.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.Deserializer.Deserialize``1(System.ReadOnlySpan{System.Byte})">
-            <inheritdoc/>
-        </member>
-        <member name="T:Senkel.Serialization.IAsyncStreamDeserializer">
-            <summary>
-            Represents an asynchronous deserializer capable of deserializing streams.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IAsyncStreamDeserializer.DeserializeAsync``1(System.IO.Stream,System.Threading.CancellationToken)">
-            <summary>
-            Deserializes an object asynchronously based on the specified stream.
-            </summary>
-            <typeparam name="T">The type to deserialize.</typeparam>
-            <param name="stream">The stream to use for deserialization.</param>
+            <param name="destination">The destination to marshal to.</param>
+            <param name="value">The object to serialize.</param>
             <param name="cancellationToken">The cancellation token of the task.</param>
-            <returns>A task containing the deserialized object.</returns>
+            <returns>The task of the marshalling.</returns>
         </member>
-        <member name="M:Senkel.Serialization.IAsyncStreamDeserializer.DeserializeAsync(System.IO.Stream,System.Type,System.Threading.CancellationToken)">
+        <member name="T:Senkel.Serialization.IAsyncPopulator`1">
             <summary>
-            Deserializes an object asynchronously based on the specified stream.
+            Represents an asynchronous deserializer that is capable of populating objects using a source of the specified type <typeparamref name="T"/>.
             </summary>
-            <param name="stream">The stream to use for deserialization.</param>
-            <param name="type">The type to deserialize.</param>
+            <typeparam name="T">The typeof objects that can be used for populating.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.IAsyncPopulator`1.PopulateAsync(`0,System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Populates the specified target object using the given source.
+            </summary>
+            <param name="source">The source to populate the target from.</param>
+            <param name="target">The object to populate.</param>
             <param name="cancellationToken">The cancellation token of the task.</param>
-            <returns>A task containing the deserialized object.</returns>
+            <returns>The task of the population.</returns>
         </member>
-        <member name="T:Senkel.Serialization.AsyncStreamDeserializer">
+        <member name="T:Senkel.Serialization.IAsyncSerializer`1">
             <summary>
-            Represents an asynchronous deserializer class capable of deserializing streams.
-            </summary> 
-        </member>
-        <member name="T:Senkel.Serialization.IStreamDeserializer">
-            <summary>
-            Represents a deserializer capable of deserializing streams.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IStreamDeserializer.Deserialize``1(System.IO.Stream)">
-            <summary>
-            Deserializes an object based on the specified stream.
+            Represents an asynchronous serializer that is capable of serializing to objects of the specified type <typeparamref name="T"/>.
             </summary>
-            <typeparam name="T">The type to deserialize.</typeparam>
-            <param name="stream">The stream to use for deserialization.</param> 
-            <returns>The deserialized object.</returns>
+            <typeparam name="T">The type that objects can be serialized to.</typeparam>
         </member>
-        <member name="M:Senkel.Serialization.IStreamDeserializer.Deserialize(System.IO.Stream,System.Type)">
+        <member name="M:Senkel.Serialization.IAsyncSerializer`1.SerializeAsync(System.Object,System.Threading.CancellationToken)">
             <summary>
-            Deserializes an object based on the specified stream.
+            Serializes the specified object to an instance of the type <typeparamref name="T"/> asynchronously.
             </summary>
-            <param name="stream">The stream to use for deserialization.</param>
-            <param name="type">The type to deserialize.</param> 
-            <returns>The deserialized object.</returns>
-        </member>
-        <member name="T:Senkel.Serialization.StreamDeserializer">
-            <summary>
-            Represents a deserializer class capable of deserializing streams.
-            </summary> 
-        </member>
-        <member name="T:Senkel.Serialization.IAsyncBufferPopulater">
-            <summary>
-            Represents an object that is capable of populating objects asynchronously by reading from a buffer.
-            </summary>
-        </member>
-        <member name="M:Senkel.Serialization.IAsyncBufferPopulater.Populate(System.ReadOnlyMemory{System.Byte},System.Object,System.Threading.CancellationToken)">
-            <summary>
-            Populates the given target asynchronously by reading from the specified buffer.
-            </summary>
-            <param name="buffer">The buffer to read from.</param>
-            <param name="target">The target to populate.</param>
+            <param name="value">The object to serialize.</param>
             <param name="cancellationToken">The cancellation token of the task.</param>
-        </member>
-        <member name="T:Senkel.Serialization.IBufferPopulater">
-            <summary>
-            Represents an object that is capable of populating objects by reading from a buffer.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IBufferPopulater.Populate(System.ReadOnlySpan{System.Byte},System.Object)">
-            <summary>
-            Populates the given target by reading from the specified buffer.
-            </summary>
-            <param name="buffer">The buffer to read from.</param>
-            <param name="target">The target to populate.</param>
-        </member>
-        <member name="T:Senkel.Serialization.IAsyncStreamPopulater">
-            <summary>
-            Represents an object that is capable of populating objects asynchronously by reading from a stream.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IAsyncStreamPopulater.Populate(System.IO.Stream,System.Object,System.Threading.CancellationToken)">
-            <summary>
-            Populates the given target asynchronously by reading from the specified stream.
-            </summary>
-            <param name="stream">The stream to read from.</param>
-            <param name="target">The target to populate.</param>
-            <param name="cancellationToken">The cancellation token of the task.</param>
-        </member>
-        <member name="T:Senkel.Serialization.IStreamPopulater">
-            <summary>
-            Represents an object that is capable of populating objects by reading from a stream.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IStreamPopulater.Populate(System.IO.Stream,System.Object)">
-            <summary>
-            Populates the given target by reading from the specified stream.
-            </summary>
-            <param name="stream">The stream to read from.</param>
-            <param name="target">The target to populate.</param>
+            <returns>A task containing the serialized object.</returns>
         </member>
         <member name="T:Senkel.Serialization.SerializationException">
             <summary>
@@ -188,57 +95,66 @@
             <param name="message">The message string of the exception.</param>
             <param name="innerException">The inner exception of the exception.</param>
         </member>
-        <member name="T:Senkel.Serialization.IAsyncBufferSerializer">
+        <member name="T:Senkel.Serialization.IDeserializer`1">
             <summary>
-            Represents an asynchronous serializer capable of serializing to a buffer.
-            </summary> 
+            Represents a deserializer that is capable of deserializing objects from a source of the type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type of the objects that can be deserialized.</typeparam>
         </member>
-        <member name="M:Senkel.Serialization.IAsyncBufferSerializer.SerializeAsync(System.Object,System.Threading.CancellationToken)">
+        <member name="M:Senkel.Serialization.IDeserializer`1.Deserialize(`0,System.Type)">
             <summary>
-            Serializes the given object asynchronously and writes the serialized data to a stream. 
+            Deserializes an object of the specified type from the given source.
+            </summary>
+            <param name="source">The source to deserialize from.</param>
+            <param name="type">The type of the object to deserialize.</param>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="M:Senkel.Serialization.IDeserializer`1.Deserialize``1(`0)">
+            <summary>
+            Deserializes an object of the specified type from the given source.
+            </summary>
+            <param name="source">The source to deserialize from.</param>
+            <typeparam name="U">The type of the object to deserialize.</typeparam>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="T:Senkel.Serialization.IMarshal`1">
+            <summary>
+            Represents a serializer that is capable of serializing an object and marshalling the serialized data to a destination of the type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type of destination that serialized data can be marshalled to.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.IMarshal`1.Marshal(`0,System.Object)">
+            <summary>
+            Serializes the specified object and marshals the serialized data to the given destination.
+            </summary>
+            <param name="destination">The destination to marshal to.</param>
+            <param name="value">The object to serialize.</param>
+        </member>
+        <member name="T:Senkel.Serialization.IPopulator`1">
+            <summary>
+            Represents a deserializer that is capable of populating objects using a source of the specified type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The typeof objects that can be used for populating.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.IPopulator`1.Populate(`0,System.Object)">
+            <summary>
+            Populates the specified target object using the given source.
+            </summary>
+            <param name="source">The source to populate the target from.</param>
+            <param name="target">The object to populate.</param>
+        </member>
+        <member name="T:Senkel.Serialization.ISerializer`1">
+            <summary>
+            Represents a serializer that is capable of serializing to objects of the specified type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type that objects can be serialized to.</typeparam>
+        </member>
+        <member name="M:Senkel.Serialization.ISerializer`1.Serialize(System.Object)">
+            <summary>
+            Serializes the specified object to an instance of the type <typeparamref name="T"/>.
             </summary>
             <param name="value">The object to serialize.</param>
-            <param name="cancellationToken">The cancellation token of the task.</param>
-            <returns>The task of the serialization.</returns>
-        </member>
-        <member name="T:Senkel.Serialization.IBufferSerializer">
-            <summary>
-            Represents a serializer capable of serializing to a buffer.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IBufferSerializer.Serialize(System.Object)">
-            <summary>
-            Serializes the given object and writes the serialized data to a stream. 
-            </summary>
-            <param name="value">The object to serialize.</param>
-            <returns>The task of the serialization.</returns>{
-        </member>
-        <member name="T:Senkel.Serialization.IAsyncStreamSerializer">
-            <summary>
-            Represents an asynchronous serializer capable of serializing to a stream.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IAsyncStreamSerializer.SerializeAsync(System.IO.Stream,System.Object,System.Threading.CancellationToken)">
-            <summary>
-            Serializes the given object asynchronously and writes the serialized data to a stream. 
-            </summary>
-            <param name="stream">The stream to serialize to.</param>
-            <param name="value">The object to serialize.</param>
-            <param name="cancellationToken">The cancellation token of the task.</param>
-            <returns>The task of the serialization.</returns>
-        </member>
-        <member name="T:Senkel.Serialization.IStreamSerializer">
-            <summary>
-            Represents a serializer capable of serializing to a stream.
-            </summary> 
-        </member>
-        <member name="M:Senkel.Serialization.IStreamSerializer.Serialize(System.IO.Stream,System.Object)">
-            <summary>
-            Serializes the given object and writes the serialized data to a stream. 
-            </summary>
-            <param name="stream">The stream to serialize to.</param>
-            <param name="value">The object to serialize.</param>
-            <returns>The task of the serialization.</returns>
+            <returns>The serialized object.</returns>
         </member>
     </members>
 </doc>

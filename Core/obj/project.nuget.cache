@@ -1,27 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dhyXYTcIjKHNhKx2i23RjMoiEuSAgFbud0L2EBFhtxPvnBJrqGPk6Zx+ZY54CWYZipCzHeGfhTjDYoGEp/U40Q==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj",
+  "dgSpecHash": "05VIK+qmwGg8lXLEvHVRwD+YNU0NLyNm4H82SmLrvNZr8FOM1aEfwxfQ/NR4zwuw6l6w/mV7jP1XU8ibZ0QJxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leonhard\\Documents\\Programming\\C#\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Projektinformationen für \"C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj\" wurden nicht gefunden. Wenn Sie Visual Studio verwenden, wurde das Projekt möglicherweise entladen oder gehört nicht zur aktuellen Projektmappe. Führen Sie daher eine Wiederherstellung über die Befehlszeile aus. Andernfalls ist die Projektdatei möglicherweise ungültig, oder es fehlen Ziele, die für die Wiederherstellung erforderlich sind.",
-      "libraryId": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Projektinformationen für \"C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj\" wurden nicht gefunden. Wenn Sie Visual Studio verwenden, wurde das Projekt möglicherweise entladen oder gehört nicht zur aktuellen Projektmappe. Führen Sie daher eine Wiederherstellung über die Befehlszeile aus. Andernfalls ist die Projektdatei möglicherweise ungültig, oder es fehlen Ziele, die für die Wiederherstellung erforderlich sind.",
-      "libraryId": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    }
-  ]
+  "logs": []
 }

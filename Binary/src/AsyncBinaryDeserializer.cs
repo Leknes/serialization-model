@@ -28,7 +28,7 @@ public sealed class AsyncBinaryDeserializer : IAsyncDeserializer<Stream>
         }
     }
 
-    public ValueTask<T?> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default) where T : default
+    public ValueTask<T?> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default)
     { 
         try
         {

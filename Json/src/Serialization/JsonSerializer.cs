@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Senkel.Serialization; 
+using Senkel.Serialization;
+using System.Globalization;
+using System.Text;
 
 namespace Senkel.Serialization.Json;
  
@@ -7,9 +9,7 @@ namespace Senkel.Serialization.Json;
 /// Represents a json serializer class that is capable of serializing objects to text or to streams.
 /// </summary> 
 public class JsonSerializer : ISerializer<string>, IMarshal<Stream>
-{
-    private readonly JsonSerializerSettings? _settings;
-
+{ 
     /// <summary>
     /// The inner json serializer from the <see cref="Newtonsoft.Json"/> package used by this serializer.
     /// </summary>
@@ -20,16 +20,23 @@ public class JsonSerializer : ISerializer<string>, IMarshal<Stream>
     /// </summary>
     /// <param name="settings">The serializer settings that the serializer will use.</param>
     public JsonSerializer(JsonSerializerSettings? settings)
-    { 
-        _settings = settings;
+    {  
+        Serializer = Newtonsoft.Json.JsonSerializer.Create(settings);
+    }
 
-        Serializer = Newtonsoft.Json.JsonSerializer.Create(_settings);
+    /// <summary>
+    /// Creates a new instance of the <see cref="JsonSerializer"/> class that wraps around the specified <see cref="Newtonsoft.Json.JsonSerializer"/> instance.
+    /// </summary>
+    /// <param name="serializer">The serializer that this instance will be based on.</param>
+    public JsonSerializer(Newtonsoft.Json.JsonSerializer serializer)
+    {  
+        Serializer = serializer;
     }
 
     /// <summary>
     /// Creates a new instance of the <see cref="JsonSerializer"/> class with a new instance of the <see cref="JsonSerializerSettings"/> class.
     /// </summary> 
-    public JsonSerializer() : this(new JsonSerializerSettings()) { }
+    public JsonSerializer() : this(new Newtonsoft.Json.JsonSerializer()) { }
 
     /// <summary>
     /// Creates a new instance of the <see cref="JsonSerializer"/> class using the default settings from <see cref="JsonConvert.DefaultSettings"/>.
@@ -42,48 +49,33 @@ public class JsonSerializer : ISerializer<string>, IMarshal<Stream>
 
         return new JsonSerializer(JsonConvert.DefaultSettings());
     }
-
-    private SerializationException GetSerializationException(object? value, JsonSerializationException exception)
+     
+    private void Marshal(TextWriter writer, object? value)
     {
-        return new SerializationException($"Json serialization of value {value} has failed.", exception);
+        try
+        {
+            Serializer.Serialize(writer, value);
+        }
+        catch (JsonSerializationException exception)
+        {
+            throw new SerializationException($"Json serialization of value {value} has failed.", exception);
+        }
     }
       
     public string Serialize(object? value)
     {
-        try
-        {
-            return JsonConvert.SerializeObject(value, _settings);
-        }
-        catch (JsonSerializationException exception)
-        {
-            throw GetSerializationException(value, exception);
-        }
-    }
-     
-    public string Serialize(object? value, Formatting formatting)
-    {
-        try
-        {  
-            return JsonConvert.SerializeObject(value, formatting, _settings);
-        }
-        catch (JsonSerializationException exception)
-        {
-            throw GetSerializationException(value, exception);
-        }
-    }
+        using StringWriter writer = new StringWriter(new StringBuilder(256), CultureInfo.InvariantCulture);
+         
+        Marshal(writer, value);
 
+        return writer.ToString();
+    }
+      
     public void Marshal(Stream stream, object? value)
     {
         StreamWriter writer = new StreamWriter(stream);
 
-        try
-        {
-           Serializer.Serialize(writer, value);
-        }
-        catch (JsonSerializationException exception)
-        {
-            throw GetSerializationException(value, exception);
-        }
+        Marshal(writer, value);
 
         writer.Flush();
     }

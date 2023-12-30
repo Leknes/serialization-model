@@ -1,15 +1,12 @@
 ﻿using Newtonsoft.Json;
-using System.IO;  
-
+using System.IO;
 namespace Senkel.Serialization.Json;
-  
+
 /// <summary>
 /// Represents a json deserializer that is capable of populating objects and deserializing objects from streams or text.
 /// </summary> 
 public class JsonDeserializer : IDeserializer<Stream>, IDeserializer<string>, IPopulator<Stream>, IPopulator<string>
-{
-    private readonly JsonSerializerSettings? _settings;
-
+{ 
     /// <summary>
     /// The inner json serializer from the <see cref="Newtonsoft.Json"/> package used by this deserializer.
     /// </summary>
@@ -20,9 +17,7 @@ public class JsonDeserializer : IDeserializer<Stream>, IDeserializer<string>, IP
     /// </summary>
     /// <param name="settings">The serializer settings that the deserializer will use.</param>
     public JsonDeserializer(JsonSerializerSettings? settings)
-    {
-        _settings = settings;
-
+    { 
         Serializer = Newtonsoft.Json.JsonSerializer.Create(settings);
     }
 
@@ -30,6 +25,15 @@ public class JsonDeserializer : IDeserializer<Stream>, IDeserializer<string>, IP
     /// Creates a new instance of the <see cref="JsonDeserializer"/> class with a new instance of the <see cref="JsonSerializerSettings"/> class.
     /// </summary> 
     public JsonDeserializer() : this(new JsonSerializerSettings()) { }
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="JsonDeserializer"/> class that wraps around the specified <see cref="Newtonsoft.Json.JsonSerializer"/> instance.
+    /// </summary>
+    /// <param name="serializer">The serializer that this instance will be based on.</param>
+    public JsonDeserializer(Newtonsoft.Json.JsonSerializer serializer)
+    {
+        Serializer = serializer;
+    }
 
     /// <summary>
     /// Creates a new instance of the <see cref="JsonDeserializer"/> class using the default settings from <see cref="JsonConvert.DefaultSettings"/>.
@@ -42,63 +46,49 @@ public class JsonDeserializer : IDeserializer<Stream>, IDeserializer<string>, IP
 
         return new JsonDeserializer(JsonConvert.DefaultSettings());
     }
-
-    private static SerializationException GetDeserializationException(Type type, JsonSerializationException exception)
-    {
-        return new SerializationException($"Json deserialization of type {type} has failed.", exception);
-    }
-
-    private static SerializationException GetPopulationException(object target, JsonSerializationException exception)
-    {
-        return new SerializationException($"Json population of target {target} has failed.", exception);
-    }
-
-    public void Populate(string text, object target)
+      
+    public void Populate(TextReader reader, object target)
     {
         try
         {
-            JsonConvert.PopulateObject(text, target, _settings);
+            Serializer.Populate(reader, target);
         }
         catch (JsonSerializationException exception)
         {
-            throw GetPopulationException(target, exception);
+            throw new SerializationException($"Json population of target {target} has failed.", exception);
         }
+    }
+
+    public void Populate(string text, object target)
+    { 
+        Populate(new StringReader(text), target);
     }
 
     public void Populate(Stream stream, object target)
     {
+        Populate(new StreamReader(stream), target);
+    }
+
+    public object? Deserialize(TextReader reader, Type type)
+    {
         try
         {
-            Serializer.Populate(new StreamReader(stream), target);
+            return Serializer.Deserialize(reader, type);
         }
         catch (JsonSerializationException exception)
         {
-            throw GetPopulationException(target, exception);
+            throw new SerializationException($"Json deserialization of type {type} has failed.", exception);
         }
     }
 
     public object? Deserialize(string text, Type type)
     {
-        try
-        {
-            return JsonConvert.DeserializeObject(text, type, _settings);
-        }
-        catch (JsonSerializationException exception)
-        {
-            throw GetDeserializationException(type, exception);
-        }
+        return Deserialize(new StringReader(text), type);
     }
 
     public object? Deserialize(Stream stream, Type type)
-    {
-        try
-        {
-            return Serializer.Deserialize(new StreamReader(stream), type);
-        }
-        catch (JsonSerializationException exception)
-        {
-            throw GetDeserializationException(type, exception);
-        }
+    { 
+        return Deserialize(new StreamReader(stream), type);
     }
 
     public T? Deserialize<T>(string text)

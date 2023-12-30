@@ -13,7 +13,6 @@
           "Senkel.Compatibility.NullableAttribute": "1.0.0",
           "Senkel.Compatibility.RequiredModifier": "1.0.0",
           "Senkel.Serialization": "1.0.0",
-          "Senkel.Serialization.Text": "1.0.0",
           "Senkel.Compatibility.NullableAttributes": "1.0.0.0",
           "Senkel.Serialization.Core": "1.0.0.0"
         },
@@ -42,11 +41,6 @@
       "Senkel.Serialization/1.0.0": {
         "runtime": {
           "Senkel.Serialization.Core.dll": {}
-        }
-      },
-      "Senkel.Serialization.Text/1.0.0": {
-        "runtime": {
-          "Senkel.Serialization.Text.dll": {}
         }
       },
       "Senkel.Compatibility.NullableAttributes/1.0.0.0": {
@@ -91,11 +85,6 @@
       "sha512": ""
     },
     "Senkel.Serialization/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Senkel.Serialization.Text/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

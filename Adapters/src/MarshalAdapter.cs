@@ -1,4 +1,4 @@
-namespace Senkel.Serialization;
+namespace Senkel.Serialization.Adapters;
 
 public class MarshalAdapter<TTarget, TAdaptee> : IMarshal<TTarget>
 {
