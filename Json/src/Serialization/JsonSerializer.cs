@@ -1,13 +1,12 @@
 ﻿using Newtonsoft.Json;
-using Senkel.Serialization;
-using Senkel.Serialization.Text; 
+using Senkel.Serialization; 
 
 namespace Senkel.Serialization.Json;
  
 /// <summary>
 /// Represents a json serializer class that is capable of serializing objects to text or to streams.
 /// </summary> 
-public class JsonSerializer : ITextSerializer, IStreamSerializer
+public class JsonSerializer : ISerializer<string>, IMarshal<Stream>
 {
     private readonly JsonSerializerSettings? _settings;
 
@@ -73,7 +72,7 @@ public class JsonSerializer : ITextSerializer, IStreamSerializer
         }
     }
 
-    public void Serialize(Stream stream, object? value)
+    public void Marshal(Stream stream, object? value)
     {
         StreamWriter writer = new StreamWriter(stream);
 

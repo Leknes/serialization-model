@@ -2,7 +2,7 @@ using MemoryPack;
 
 namespace Senkel.Serialization.Binary;
 
-public class AsyncBinarySerializer : IAsyncStreamSerializer
+public class AsyncBinarySerializer : IAsyncMarshal<Stream>
 {
     public readonly MemoryPackSerializerOptions? Options;
 
@@ -11,7 +11,7 @@ public class AsyncBinarySerializer : IAsyncStreamSerializer
         Options = options;
     }
  
-    public ValueTask SerializeAsync(Stream stream, object? value, CancellationToken cancellationToken = default)
+    public ValueTask MarshalAsync(Stream stream, object? value, CancellationToken cancellationToken = default)
     {
         try
         {

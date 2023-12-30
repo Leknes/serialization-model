@@ -10,7 +10,6 @@
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "Senkel.Serialization": "1.0.0",
-          "Senkel.Serialization.Text": "1.0.0",
           "Senkel.Serialization.Core": "1.0.0.0"
         },
         "runtime": {
@@ -28,11 +27,6 @@
       "Senkel.Serialization/1.0.0": {
         "runtime": {
           "Senkel.Serialization.Core.dll": {}
-        }
-      },
-      "Senkel.Serialization.Text/1.0.0": {
-        "runtime": {
-          "Senkel.Serialization.Text.dll": {}
         }
       },
       "Senkel.Serialization.Core/1.0.0.0": {
@@ -59,11 +53,6 @@
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "Senkel.Serialization/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Senkel.Serialization.Text/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

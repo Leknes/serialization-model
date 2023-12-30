@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Senkel.Serialization.Text;
 using System.IO;  
 
 namespace Senkel.Serialization.Json;
@@ -7,7 +6,7 @@ namespace Senkel.Serialization.Json;
 /// <summary>
 /// Represents a json deserializer that is capable of populating objects and deserializing objects from streams or text.
 /// </summary> 
-public class JsonDeserializer : StreamDeserializer, ITextDeserializer, ITextPopulater, IStreamPopulater
+public class JsonDeserializer : IDeserializer<Stream>, IDeserializer<string>, IPopulator<Stream>, IPopulator<string>
 {
     private readonly JsonSerializerSettings? _settings;
 
@@ -90,7 +89,7 @@ public class JsonDeserializer : StreamDeserializer, ITextDeserializer, ITextPopu
         }
     }
 
-    public override object? Deserialize(Stream stream, Type type)
+    public object? Deserialize(Stream stream, Type type)
     {
         try
         {
@@ -105,5 +104,10 @@ public class JsonDeserializer : StreamDeserializer, ITextDeserializer, ITextPopu
     public T? Deserialize<T>(string text)
     {
         return (T?)Deserialize(text, typeof(T));
+    }
+
+    public T? Deserialize<T>(Stream source)
+    {
+        return (T?)(Deserialize(source, typeof(T)));
     }
 }

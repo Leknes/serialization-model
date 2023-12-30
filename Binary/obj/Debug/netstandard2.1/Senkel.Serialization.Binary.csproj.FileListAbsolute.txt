@@ -21,3 +21,12 @@ D:\Programming\C#\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Co
 D:\Programming\C#\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Compatibility.RequiredModifier.xml
 D:\Programming\C#\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Compatibility.NullableAttributes.pdb
 D:\Programming\C#\Senkel\Serialization\Binary\bin\Debug\netstandard2.1\Senkel.Compatibility.NullableAttributes.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.csproj.AssemblyReference.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.AssemblyInfoInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.AssemblyInfo.cs
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.csproj.CoreCompileInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.sourcelink.json
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Binary\obj\Debug\netstandard2.1\Senkel.Serialization.Binary.pdb

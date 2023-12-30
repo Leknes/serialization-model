@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Json",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Text", "Text\Senkel.Serialization.Text.csproj", "{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senkel.Serialization.Adapters", "Adapters\Senkel.Serialization.Adapters.csproj", "{F906F162-AF6A-4499-B749-8879CD9BED00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D7206C0-7A8A-44E4-939F-7EF838B6CF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F906F162-AF6A-4499-B749-8879CD9BED00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F906F162-AF6A-4499-B749-8879CD9BED00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F906F162-AF6A-4499-B749-8879CD9BED00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F906F162-AF6A-4499-B749-8879CD9BED00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

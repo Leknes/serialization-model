@@ -1,8 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <PackageId>Senkel.Serialization.Text</PackageId>
-    <PackageDescription>An extension of my serialization framework for text serialization and deserialization.</PackageDescription>
-  </PropertyGroup>
-
-</Project>

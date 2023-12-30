@@ -2,7 +2,7 @@
 
 namespace Senkel.Serialization.Binary;
 
-public sealed class AsyncBinaryDeserializer : AsyncStreamDeserializer
+public sealed class AsyncBinaryDeserializer : IAsyncDeserializer<Stream>
 {
     public readonly MemoryPackSerializerOptions? Options;
 
@@ -16,7 +16,7 @@ public sealed class AsyncBinaryDeserializer : AsyncStreamDeserializer
         return new SerializationException($"Async binary deserialization to type {type} failed.", exception);
     }
 
-    public override ValueTask<object?> DeserializeAsync(Stream stream, Type type, CancellationToken cancellationToken = default)
+    public ValueTask<object?> DeserializeAsync(Stream stream, Type type, CancellationToken cancellationToken = default)
     {
         try
         { 
@@ -28,7 +28,7 @@ public sealed class AsyncBinaryDeserializer : AsyncStreamDeserializer
         }
     }
 
-    public override ValueTask<T?> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default) where T : default
+    public ValueTask<T?> DeserializeAsync<T>(Stream stream, CancellationToken cancellationToken = default) where T : default
     { 
         try
         {

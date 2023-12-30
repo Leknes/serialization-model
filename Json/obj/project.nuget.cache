@@ -1,10 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "k2mPcK3lRe4CtO+8O4LfmuTlaaflapoGIkAMR1gRyR9oCiohYWcAqzYtOinJ6kDEY1yiRfFhi4Q5XY/18qLoGw==",
-  "success": true,
-  "projectFilePath": "D:\\Programming\\C#\\Senkel\\Serialization\\Json\\Senkel.Serialization.Json.csproj",
+  "dgSpecHash": "U7Dx7aQzSlcvilsLPCY1lEIxxLe2kEh6aAC1UDITrdLrGacX73TKOcsyQCDPO2qJ4lF+tHDGS8W/350vYEfrpw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Json\\Senkel.Serialization.Json.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonhard\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Projektinformationen für \"C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj\" wurden nicht gefunden. Wenn Sie Visual Studio verwenden, wurde das Projekt möglicherweise entladen oder gehört nicht zur aktuellen Projektmappe. Führen Sie daher eine Wiederherstellung über die Befehlszeile aus. Andernfalls ist die Projektdatei möglicherweise ungültig, oder es fehlen Ziele, die für die Wiederherstellung erforderlich sind.",
+      "libraryId": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Projektinformationen für \"C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj\" wurden nicht gefunden. Wenn Sie Visual Studio verwenden, wurde das Projekt möglicherweise entladen oder gehört nicht zur aktuellen Projektmappe. Führen Sie daher eine Wiederherstellung über die Befehlszeile aus. Andernfalls ist die Projektdatei möglicherweise ungültig, oder es fehlen Ziele, die für die Wiederherstellung erforderlich sind.",
+      "libraryId": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
 }

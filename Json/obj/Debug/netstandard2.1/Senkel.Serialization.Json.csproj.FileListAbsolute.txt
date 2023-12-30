@@ -24,3 +24,12 @@ D:\Programming\C#\Senkel\Serialization\Json\bin\Debug\netstandard2.1\Senkel.Comp
 D:\Programming\C#\Senkel\Serialization\Json\bin\Debug\netstandard2.1\Senkel.Compatibility.RequiredModifier.xml
 D:\Programming\C#\Senkel\Serialization\Json\bin\Debug\netstandard2.1\Senkel.Compatibility.NullableAttributes.pdb
 D:\Programming\C#\Senkel\Serialization\Json\bin\Debug\netstandard2.1\Senkel.Compatibility.NullableAttributes.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.csproj.AssemblyReference.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.AssemblyInfoInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.AssemblyInfo.cs
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.csproj.CoreCompileInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.sourcelink.json
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Json\obj\Debug\netstandard2.1\Senkel.Serialization.Json.pdb

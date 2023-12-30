@@ -2,7 +2,7 @@
 
 namespace Senkel.Serialization.Binary;
   
-public sealed class BinaryDeserializer : StreamDeserializer, IBufferDeserializer
+public sealed class BinaryDeserializer : IDeserializer<Stream>, IDeserializer<ReadOnlyMemory<byte>>
 {
     public readonly MemoryPackSerializerOptions? Options;
  
@@ -16,22 +16,22 @@ public sealed class BinaryDeserializer : StreamDeserializer, IBufferDeserializer
         return new SerializationException($"Binary deserialization to type {type} failed.", exception);
     }
 
-    private ReadOnlySpan<byte> GetBuffer(Stream stream)
+    private ReadOnlyMemory<byte> GetBuffer(Stream stream)
     {
         long length = stream.Length - stream.Position;
 
-        Span<byte> buffer = new byte[length];
+        Memory<byte> buffer = new byte[length];
 
-        stream.Read(buffer);
+        stream.Read(buffer.Span);
 
         return buffer;
     }
 
-    public T? Deserialize<T>(ReadOnlySpan<byte> buffer)
+    public T? Deserialize<T>(ReadOnlyMemory<byte> buffer)
     {
         try
         {
-            return MemoryPackSerializer.Deserialize<T>(buffer, Options);
+            return MemoryPackSerializer.Deserialize<T>(buffer.Span, Options);
         }
         catch(MemoryPackSerializationException exception)
         {
@@ -39,11 +39,11 @@ public sealed class BinaryDeserializer : StreamDeserializer, IBufferDeserializer
         }
     }
 
-    public object? Deserialize(ReadOnlySpan<byte> buffer, Type type)
+    public object? Deserialize(ReadOnlyMemory<byte> buffer, Type type)
     {
         try
         {
-            return MemoryPackSerializer.Deserialize(type, buffer, Options);
+            return MemoryPackSerializer.Deserialize(type, buffer.Span, Options);
         }
         catch (MemoryPackSerializationException exception)
         {

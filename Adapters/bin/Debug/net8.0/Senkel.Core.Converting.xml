@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senkel.Core.Converting</name>
+    </assembly>
+    <members>
+        <member name="T:Senkel.IConverter`2">
+            <summary>
+            Represents a converter that is capable of converting objects of the <typeparamref name="TInput"/> type 
+            to an object of the <typeparamref name="TOutput"/> type.
+            </summary>
+            <typeparam name="TInput">The type of the objects that this converter can convert from.</typeparam>
+            <typeparam name="TOutput">The type that this converter can convert objects to.</typeparam>
+        </member>
+        <member name="M:Senkel.IConverter`2.Convert(`0)">
+            <summary>
+            Converts the specified object to an object of the <typeparamref name="TOutput"/> type.
+            </summary>
+            <param name="input">The object to convert.</param>
+            <returns>The converted result.</returns>
+        </member>
+        <member name="T:Senkel.IConvertible`1">
+            <summary>
+            Represents an object that can be converted to another instance of the type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The that this object can be converted to.</typeparam>
+        </member>
+        <member name="M:Senkel.IConvertible`1.Convert">
+            <summary>
+            Converts this object to an instance of the type <typeparamref name="T"/>.
+            </summary>
+            <returns>The converted object.</returns>
+        </member>
+    </members>
+</doc>

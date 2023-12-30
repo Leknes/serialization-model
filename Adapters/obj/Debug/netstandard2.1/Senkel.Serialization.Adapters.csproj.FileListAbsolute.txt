@@ -1,0 +1,6 @@
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.csproj.AssemblyReference.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.AssemblyInfoInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.AssemblyInfo.cs
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.csproj.CoreCompileInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\netstandard2.1\Senkel.Serialization.Adapters.sourcelink.json

@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Adapters\\Senkel.Serialization.Adapters.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Adapters\\Senkel.Serialization.Adapters.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Adapters\\Senkel.Serialization.Adapters.csproj",
+        "projectName": "Senkel.Serialization.Adapters",
+        "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Adapters\\Senkel.Serialization.Adapters.csproj",
+        "packagesPath": "C:\\Users\\Leonhard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Adapters\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\Leonhard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Leknes/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Core\\Converting\\Senkel.Core.Converting.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Core\\Converting\\Senkel.Core.Converting.csproj"
+              },
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj",
+                "privateAssets": "all"
+              },
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj",
+                "privateAssets": "all"
+              },
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Core\\Converting\\Senkel.Core.Converting.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Core\\Converting\\Senkel.Core.Converting.csproj"
+              },
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj",
+        "projectName": "Senkel.Serialization",
+        "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\Senkel.Serialization.Core.csproj",
+        "packagesPath": "C:\\Users\\Leonhard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Serialization\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\Leonhard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Leknes/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\NullableAttributes\\Senkel.Compatibility.NullableAttributes.csproj",
+                "privateAssets": "all"
+              },
+              "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj": {
+                "projectPath": "C:\\Users\\Leonhard\\OneDrive\\Dokumente\\GitHub\\Senkel\\Compatibility\\RequiredModifier\\Senkel.Compatibility.RequiredModifier.csproj",
+                "privateAssets": "all"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

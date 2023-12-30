@@ -3,7 +3,7 @@ using MemoryPack;
 
 namespace Senkel.Serialization.Binary;
 
-public sealed class BinarySerializer : IStreamSerializer, IBufferSerializer
+public sealed class BinarySerializer : IMarshal<Stream>, ISerializer<ReadOnlyMemory<byte>>
 {
     public readonly MemoryPackSerializerOptions? Options;
 
@@ -12,12 +12,12 @@ public sealed class BinarySerializer : IStreamSerializer, IBufferSerializer
         Options = options;
     }
 
-    public void Serialize(Stream stream, object? value)
+    public void Marshal(Stream stream, object? value)
     { 
-        stream.Write(Serialize(value));
+        stream.Write(Serialize(value).Span);
     }
  
-    public ReadOnlySpan<byte> Serialize(object? value)
+    public ReadOnlyMemory<byte> Serialize(object? value)
     {
         ArrayBufferWriter<byte> bufferWriter = new ArrayBufferWriter<byte>();
          
@@ -30,6 +30,6 @@ public sealed class BinarySerializer : IStreamSerializer, IBufferSerializer
             throw new SerializationException($"Binary serialization of value '{value}' failed.", exception);
         }
          
-        return bufferWriter.WrittenSpan;
+        return bufferWriter.WrittenMemory;
     }
 }

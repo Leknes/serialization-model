@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Senkel.Serialization.Adapters</PackageId>
+    <PackageDescription>Contains adapters used for serialization.</PackageDescription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Senkel.Serialization.Core.csproj" />
+	<ProjectReference Include="..\..\Core\Converting\Senkel.Core.Converting.csproj" />
+  </ItemGroup>
+
+</Project>

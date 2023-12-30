@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <PackageId>Senkel.Serialization.Json</PackageId>
@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Senkel.Serialization.Core.csproj" />
-    <ProjectReference Include="..\Text\Senkel.Serialization.Text.csproj" />
   </ItemGroup>
 
 </Project>

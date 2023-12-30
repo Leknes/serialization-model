@@ -1,0 +1,17 @@
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.csproj.AssemblyReference.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.AssemblyInfoInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.AssemblyInfo.cs
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.csproj.CoreCompileInputs.cache
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.sourcelink.json
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Core.Converting.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Serialization.Core.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Serialization.Core.pdb
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Serialization.Core.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Core.Converting.pdb
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\bin\Debug\net8.0\Senkel.Core.Converting.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.csproj.CopyComplete
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\refint\Senkel.Serialization.Adapters.dll
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.xml
+C:\Users\Leonhard\OneDrive\Dokumente\GitHub\Senkel\Serialization\Adapters\obj\Debug\net8.0\Senkel.Serialization.Adapters.pdb
