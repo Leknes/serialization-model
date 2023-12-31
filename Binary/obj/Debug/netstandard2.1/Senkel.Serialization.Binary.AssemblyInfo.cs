@@ -11,10 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Leonhard Senkel")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Senkel.Serialization.Binary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fca154b8a42d4a266af25c3baeedcf0809a2650e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Senkel.Serialization.Binary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Senkel.Serialization.Binary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
