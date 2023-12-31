@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qQHqk1Y4G1VYC0Pcm0ygbMxeT2ycDPx9Pv48YEWv3B5oZK95QkVLRzO8r5HbsHnmADoNILc/+nW3nOctPHcmNw==",
+  "dgSpecHash": "OMPOQu+KlDq7hXzLnJ2+xPhLC51Zt7KvFnT7zFh02/LRgNfCRrNSoffeUssSkoTtxfJv3+Tv1kgtONo/RnnCHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Leonhard\\Documents\\Programming\\C#\\Senkel\\Serialization\\Binary\\Senkel.Serialization.Binary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Leonhard\\.nuget\\packages\\memorypack.core\\1.10.0\\memorypack.core.1.10.0.nupkg.sha512",
-    "C:\\Users\\Leonhard\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Leonhard\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
-    "C:\\Users\\Leonhard\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Leonhard\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
-    "C:\\Users\\Leonhard\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Leonhard\\.nuget\\packages\\memorypack.core\\1.10.0\\memorypack.core.1.10.0.nupkg.sha512"
   ],
   "logs": []
 }
